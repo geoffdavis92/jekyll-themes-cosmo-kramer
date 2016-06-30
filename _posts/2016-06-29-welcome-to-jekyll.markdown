@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-author: Geoff Davis
+title:  The Blog About Nothing
+author: Cosmo Kramer
 date:   2016-06-29 18:42:40 -0500
 categories: jekyll update
 

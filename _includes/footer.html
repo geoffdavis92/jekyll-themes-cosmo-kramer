@@ -8,3 +8,6 @@
 </section>
 
 <script src="/js/init.js"></script>
+{% for script in page.scripts %}
+	<script src="/js/{{script}}.js"></script>
+{% endfor %}

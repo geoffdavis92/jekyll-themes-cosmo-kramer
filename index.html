@@ -1,14 +1,15 @@
 ---
 layout: default
+title: home
 ---
 <section>
-  <h1>Cosmo Kramer</h1>
-</section>
-<section>
   {% for post in site.posts %}
-    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-    <p><span class="quotes">&ldquo;</span>{{ post.excerpt | strip_html }}<span class="quotes">&rdquo;</span></p>
-    <p><a href="{{ post.url }}">Read&nbsp;&raquo;</a></p>
+    <article class="post">
+      <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="post-meta"><span class="post-author">By: <a class="stealth" href="/search?author={{ post.author }}">{{ post.author }}</a></span><span class="post-date"><a href="/search?date={{ post.date | date: "%b %-d, %Y" }}"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></a></span></p>
+      <p class="post-excerpt">{{ post.excerpt | strip_html }}</p>
+      <p class="post-read-more"><a href="{{ post.url }}">Read&nbsp;&raquo;</a></p>
+    </article>
   {% endfor %}
 </section>
 <!-- <section>

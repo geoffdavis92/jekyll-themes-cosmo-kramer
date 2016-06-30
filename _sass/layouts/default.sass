@@ -1,0 +1,44 @@
+// Global layout styles
+
+html
+	overflow-y: scroll
+	overflow-x: hidden
+
+p, blockquote
+	letter-spacing: .03em
+	line-height: 1.25em
+	margin: 1em auto
+
+section
+	margin-right: auto
+	margin-left: auto
+	max-width: 600px
+	position: relative
+	@media screen and (max-width:700px)
+		max-width: 80%
+h1
+	margin: .67em 0
+
+li, a
+	cursor: pointer
+
+blockquote
+	border-left: 5px solid darken($gray,5%)
+	color: #666
+	font-family: $sans
+	font-style: italic
+	font-weight: 300
+	letter-spacing: 0em
+	padding: 7px 0 7px 15px
+
+p
+	a
+		color: $link-color//#993333
+		text-decoration: underline
+		&:hover
+			text-decoration: underline
+pre
+	background-color: $gray
+	padding: 5px 7px
+	code
+		background-color: transparent

@@ -1,0 +1,26 @@
+// Forms
+
+form
+	fieldset
+		border: 1px solid transparent
+		margin: 15px auto
+		&:focus
+			border-color: $base
+		@media only screen and (min-width: 768px)
+			border: 1px solid $gray
+	label, input
+		font-size: 1em
+	input
+		border: 1px solid #bcbcbc
+		color: $base
+		padding: 6px 8px
+		@media only screen and (min-width: 550px)
+			max-width: 45%
+		&:active, &:focus
+			outline: none
+		&:focus
+			border: 1px solid $darkscarlet
+		&:not([type="checkbox"])
+			display: block
+			width: 100%
+			

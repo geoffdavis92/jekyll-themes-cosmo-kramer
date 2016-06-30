@@ -1,0 +1,26 @@
+// Utility classes
+
+.cf
+	+clearfix
+	zoom: 1
+.half
+	display: inline-block
+	margin: -1em 0 0
+	padding: 0 20px 0 0
+	vertical-align: top
+	width: calc(50% - 44px)
+	& + .half
+		padding: 0 0 0 20px
+button, .btn
+	background-color: $scarlet
+	border: 1px solid transparent
+	color: #fafafa
+	cursor: pointer
+	display: block
+	font-size: 1em
+	margin: 10px 0 5px
+	padding: 5px 7px
+	&:focus, &:active
+		outline: none
+	&:active
+		background-color: $darkscarlet

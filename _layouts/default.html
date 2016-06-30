@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body>
-  {% include header.html %}
-  {{ content }}
-  {% include footer.html %}
-  </body>
+{% include head.html %}
+<body class="layout-{{ page.layout }} page-{{ page.title }}">
+    {% include header.html %}
+   {% unless page.title == 'search' %}<section>
+        <h1>{% if page.title == 'home' %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</h1>
+    </section>{% endunless %}
+    {{ content }}
+    {% include footer.html %}
+</body>
 </html>
