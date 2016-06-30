@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section>
+  <h1>Cosmo Kramer</h1>
+</section>
+<section>
+  {% for post in site.posts %}
+    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+    <p><span class="quotes">&ldquo;</span>{{ post.excerpt | strip_html }}<span class="quotes">&rdquo;</span></p>
+    <p><a href="{{ post.url }}">Read&nbsp;&raquo;</a></p>
+  {% endfor %}
+</section>
+<!-- <section>
+  <h1>Cosmo Kramer</h1>
+</section>
+<section>
+  <p>Commodo occaecat dolor voluptate minim mollit aute dolor officia non ad ea. Aute consequat est nostrud mollit laborum irure ea excepteur quis dolor veniam reprehenderit aliquip. Occaecat sint eiusmod culpa cillum velit fugiat pariatur. Mollit nisi voluptate <a href="https://google.com/search?q=jury nullification" target="_blank" rel="noopener noreferrer">culpa adipisicing sunt</a> incididunt voluptate. Velit tempor aliqua quis consequat quis id aliqua ea non sit fugiat. Et nisi irure mollit veniam aute aliqua enim ullamco deserunt.</p>
+  <p><img src="https://placehold.it/400x250"/><span class="caption">Placeholder caption.</span></p>
+  <p>Reprehenderit consequat nostrud aliquip culpa aute dolor eu mollit esse incididunt enim. Laborum reprehenderit commodo cillum magna enim sunt velit nulla ad labore aliqua mollit. Lorem non deserunt laboris minim. Adipisicing reprehenderit enim elit commodo et eiusmod voluptate id veniam est. Enim culpa non elit est commodo velit ipsum voluptate reprehenderit officia id. Ad ullamco mollit amet non deserunt esse Lorem eiusmod minim qui. Do occaecat velit quis irure in sint non adipisicing labore laborum veniam dolor reprehenderit aute.</p>
+  <blockquote>Nostrud aute sint in consectetur eiusmod sit ullamco tempor. Esse nostrud irure in aliquip voluptate. Irure dolore dolor duis tempor aliqua nostrud proident voluptate in pariatur enim. Ex et sunt dolore duis ipsum nulla exercitation non adipisicing adipisicing do quis. Dolore exercitation est Lorem laborum quis aliquip aliquip ea eu. Incididunt do anim do culpa Lorem proident ad excepteur nulla.</blockquote>
+  <p>Labore in veniam deserunt ea duis elit consectetur. Nostrud dolor occaecat eiusmod reprehenderit consequat consequat ex do sint nostrud veniam Lorem. Reprehenderit pariatur nisi labore anim non. Aliquip anim reprehenderit fugiat elit. Voluptate aute ut ullamco minim. Ipsum nisi id deserunt eiusmod Lorem minim excepteur amet incididunt incididunt. Do officia sint eiusmod sit aliqua culpa ullamco duis voluptate ea mollit duis incididunt.</p>
+  <p>Sunt commodo do dolore irure occaecat adipisicing id mollit sunt. Est dolor eiusmod amet eiusmod ad adipisicing sunt est pariatur veniam commodo. Proident nisi id ad do.</p>
+  <p>Sit ipsum ut nostrud Lorem. Ullamco Lorem occaecat sunt eiusmod sunt incididunt eiusmod ipsum sint culpa quis amet labore minim. Est est anim Lorem voluptate tempor Lorem dolor.</p>
+</section>
+<section>
+  <quote class="reference"><span>Source: </span><span><strong>Seinfeld</strong>, Season 4 Episode 6</span></quote>
+</section> -->
