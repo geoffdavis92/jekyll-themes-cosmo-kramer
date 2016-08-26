@@ -3,9 +3,10 @@
 .cta
 	$growth: 33px
 	background-color: $gray
-	box-shadow: $growth 0 0 $gray, (-1 * $growth) 0 0 $gray
 	margin: 50px auto
 	padding: 10px 0 20px
+	@media only screen and (min-width: 768px)
+		box-shadow: $growth 0 0 $gray, (-1 * $growth) 0 0 $gray
 	p
 		font-size: 1.66em
 		text-align: center

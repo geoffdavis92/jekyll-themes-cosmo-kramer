@@ -10,6 +10,10 @@ form
 			border: 1px solid $gray
 	label, input
 		font-size: 1em
+	label.error, input
+		& + label
+			display: block
+			margin-top: 10px
 	input
 		border: 1px solid #bcbcbc
 		color: $base
@@ -21,6 +25,22 @@ form
 		&:focus
 			border: 1px solid $darkscarlet
 		&:not([type="checkbox"])
-			display: block
+			display: inline-block
+			margin-right: 10px
 			width: 100%
-			
+	label
+		display: block
+		&.inline
+			display: inline-block
+			margin-right: 10px
+		&.error
+			color: $scarlet
+			display: none
+			margin: 0
+			&.show
+				display: block
+				@media only screen and (min-width: 768px)
+					display: inline-block
+	[data-required]:not([type="checkbox"]):after
+		content: "*"
+		color: $scarlet
